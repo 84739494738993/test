@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container1 {
+    width: 300px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+
+input[type="text"],
+input[type="password"],
+select,
+textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button{
+    width: calc(100% - 20px);
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+#clean{
+    width: 200px;
+    height: 60px;
+    display: none;
+    position: relative;
+    position: fixed;
+    top: 25px;
+    left:1300px;
+}
+
+/* button:hover {
+    background-color: #45a049;
+} */
+
+#errorMsg {
+    color: red;
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+
+#teacherMenu,
+#studentMenu {
+    display: none;
+}
+
+#all {
+    display: none;
+    width: 100vw;
+    height: 100vh; 
+}
+
+.number input[type="button"] {
+    display: block; /* Делаем кнопки блочными, чтобы они располагались друг под другом */
+    margin-bottom: 15px; /* Добавляем небольшой отступ между кнопками */
+}
+
+
+
+.question,
+.answer {
+    display: none; 
+    position: relative;
+    left: 400px;
+
+}
+
+input[type="button"] {
+    margin-top: 40px;
+    margin-left: 150px;
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    color:  rgb(255, 255, 255);
+    background-color: rgb(100, 100, 100);
+}
+/* input[type="button"]:hover {
+background-color:rgb(255, 255, 255);
+color:  rgb(100, 100, 100);
+} */
+
+#check {
+    width: 300px;
+    height: 100px;
+    position: relative;
+    top: 600px;
+    left: -550px;
+    background-color: #45a049;
+    color: #ffffff;
+    display: none;
+    
+}
+
+#result{
+    width: 200px;
+    height: 60px;
+    position: relative;
+    position: fixed;
+    top: 25px;
+    left: 1300px;
+    background-color: red;
+    color: #ffffff;
+    font-size: 50px;
+    text-align: center;
+    display: none;
+}
+
+
